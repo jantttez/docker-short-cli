@@ -1,11 +1,11 @@
 #!/bin/bash
 
-MESSAGE="1"
+MESSAGE="$1"
 DATE=$(date)
 
 PARENT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)
 
-rm "${PARENT_DIR}/docker-short"
+rm "${PARENT_DIR}/dcshort"
 
 if [ -z "$MESSAGE" ]; then
     echo "Starting push to remote repo with auto message..."

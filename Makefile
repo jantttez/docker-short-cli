@@ -1,7 +1,10 @@
-.PHONY: build args
+.PHONY: build args install
 
 build:
-	@rm docker-short && go build -o docker-short
+	@rm dcshort && go build -o dcshort
 
 push:
 	@sh scripts/push.sh "$M"
+
+install:
+	@chmod +x scripts/install.sh && sh scripts/install.sh
