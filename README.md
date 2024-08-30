@@ -1,4 +1,7 @@
-# super simple docker-short-cli
+# super simple docker-short-cli ( 1 hours to write )
+
+![cat](./assets/image.png)
+
 
 ## installing 
 
@@ -32,7 +35,7 @@ dcshort build image:namev1 # docker build . -t image:namev1 -f Dockerfile
 #### Run exmaple 
 
 ```bash
-dcshort run image:namev1 test-con 9090:9090 # docker run --rm -d --name test-con -p 9090 image:namev1
+dcshort run image:namev1 test-con 9090:9090 # docker run --rm -d --name test-con -p 9090:9090 image:namev1
 ```
 
 --- 
