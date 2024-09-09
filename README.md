@@ -49,5 +49,5 @@ dcshort run image:namev1 test-con 9090:9090 # docker run --rm -d --name test-con
 #### alias
 
 ```bash
-alias dc='dcshort'
+make alias #command who added alias ds="dcshort" in ur zshrc file if this alias doesnt exist 
 ```

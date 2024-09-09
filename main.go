@@ -8,13 +8,13 @@ import (
 
 
 func usageExplane() error {
-    fmt.Println("---- Required min 2 argumets after docker-short")
-    fmt.Println("Usage ---- docker-short <run|build> <image-name> [<container-name>] [<port>]")
-    fmt.Println("example ---- docker-short build image:namev1 # docker build . -t image:namev1 -f Dockerfile")
-    fmt.Println("example ---- docker-short run image:namev1 test-con 9090:9090 # docker run --rm -d --name test-con -p 9090 image:namev1")
+    fmt.Println("- Required min 2 argumets after dcshort")
+    fmt.Println("Usage:  dcshort <run|build> <image-name> [<container-name>] [<port>]")
+    fmt.Println("build example:  dcshort build image:namev1 # docker build . -t image:namev1 -f Dockerfile")
+    fmt.Println("run example:  dcshort run image:namev1 test-con 9090:9090 # docker run --rm -d --name test-con -p 9090 image:namev1")
     fmt.Println("command:")
-    fmt.Println("run ----  docker run --rm -d --name <container-name> -p <portforward> <image-name>")
-    fmt.Println("build ---- docker build . -t <image-name> -f Dockerfile")
+    fmt.Println("run:   docker run --rm -d --name <container-name> -p <portforward> <image-name>")
+    fmt.Println("build:  docker build . -t <image-name> -f Dockerfile")
 	return nil
 }
 
